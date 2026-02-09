@@ -1,4 +1,6 @@
 import { useTheme } from "../context/ThemeContext"
+import img from "../assets/IMG_1208-modified.png"
+
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
@@ -13,10 +15,16 @@ export default function Navbar() {
       "
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-      <img src="" alt="Profile picture of Rakesh Sangem"/>
-      <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-  Prajakta
-</span>
+      <div className="flex items-center gap-3">
+          <img
+            src={img}
+            alt="Prajakta"
+            className="h-8 w-8 rounded-full object-cover hover:scale-105 transition-transform"
+          />
+          <span className="font-semibold text-base">
+            Prajakta
+          </span>
+        </div>
 
 
         <div className="flex items-center gap-6 text-sm">
