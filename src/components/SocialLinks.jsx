@@ -15,15 +15,23 @@ export default function SocialLinks() {
           key={i}
           href={item.link}
           target="_blank"
-          whileHover={{ scale: 1.2 }}
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
           className="
-            p-3 rounded-full
-            bg-white/10 backdrop-blur
-            border border-white/20
-            text-white
-            hover:shadow-[0_0_20px_rgba(56,189,248,0.6)]
-            transition
+            p-3 rounded-full transition
+
+            /* Light Mode */
+            bg-slate-200
+            border border-slate-300
+            text-slate-700
+            hover:shadow-md
+
+            /* Dark Mode */
+            dark:bg-white/10
+            dark:border-white/20
+            dark:text-white
+            dark:hover:shadow-[0_0_20px_rgba(56,189,248,0.6)]
           "
         >
           <item.icon size={18} />

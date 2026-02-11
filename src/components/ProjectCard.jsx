@@ -9,34 +9,51 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      whileHover={{
-        y: -6,
-        boxShadow: "0 0 40px rgba(255,255,255,0.06)",
-      }}
+      whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 300 }}
       className="
-  rounded-xl border
-  border-zinc-200 bg-white
-  dark:border-zinc-800 dark:bg-zinc-900/40
-  p-6
-"
+        rounded-xl border p-6 transition-all duration-300
+
+        /* Light Mode */
+        border-slate-200 bg-white shadow-sm hover:shadow-lg
+
+        /* Dark Mode */
+        dark:border-slate-800 dark:bg-slate-900/60
+      "
     >
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="mt-1 text-sm text-zinc-400">{tech}</p>
+      {/* Title */}
+      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+        {title}
+      </h3>
 
-      <p className="mt-4 text-zinc-300">{description}</p>
+      {/* Tech */}
+      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+        {tech}
+      </p>
 
-      <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+      {/* Description */}
+      <p className="mt-4 text-slate-600 dark:text-slate-400">
+        {description}
+      </p>
+
+      {/* Points */}
+      <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-400">
         {points.map((point) => (
           <li key={point}>• {point}</li>
         ))}
       </ul>
 
+      {/* Link */}
       <a
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="mt-6 inline-block text-sm font-medium text-zinc-100 underline-offset-4 hover:underline"
+        className="
+          mt-6 inline-block text-sm font-medium
+          text-blue-600 hover:text-blue-700
+          dark:text-blue-400 dark:hover:text-blue-300
+          transition
+        "
       >
         View on GitHub →
       </a>

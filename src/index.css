@@ -2,3 +2,11 @@
 
 /* Class-based dark mode so theme toggle works (Tailwind v4 defaults to prefers-color-scheme) */
 @custom-variant dark (&:where(.dark, .dark *));
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  section {
+    scroll-margin-top: 96px;
+  }

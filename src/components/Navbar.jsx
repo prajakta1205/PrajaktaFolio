@@ -6,14 +6,22 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
   return (
     <nav
-      className="
-        fixed top-0 z-50 w-full border-b
-        bg-emerald-50/80 text-zinc-900 backdrop-blur
-        dark:bg-zinc-950/80 dark:text-zinc-100
-        border-zinc-200 dark:border-zinc-800
-      "
-    >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    className="
+      fixed top-0 left-0 w-full z-[100]
+      backdrop-blur-md transition-colors duration-300
+  
+      /* Light Mode */
+      bg-white/80
+      border-b border-slate-200
+  
+      /* Dark Mode */
+      dark:bg-slate-950/90
+      dark:border-slate-800
+    "
+  >
+<div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+
+
       <div className="flex items-center gap-3">
           <img
             src={img}

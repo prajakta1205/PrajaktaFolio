@@ -7,18 +7,21 @@ import Navbar from "./components/Navbar"
 export default function App() {
   return (
     <main
-      className="
-        min-h-screen transition-colors duration-500
-        bg-[linear-gradient(120deg,#fde2e4,#e0f2fe)]
-        dark:bg-[linear-gradient(120deg,#0a1020,#0f172a)]
-        text-zinc-900 dark:text-zinc-100
-      "
+    className="
+    min-h-screen transition-colors duration-500
+    bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100
+    dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-800
+    text-slate-900 dark:text-slate-100
+    dark:drop-shadow-[0_0_12px_rgba(59,130,246,0.4)]
+  "
     >
       <Navbar />
+      <div className="pt-20">
       <Hero />
       <Skills />
       <Projects />
       <Experience />
+      </div>
     </main>
   )
 }
