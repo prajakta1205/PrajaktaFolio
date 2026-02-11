@@ -4,7 +4,6 @@ import img from "../assets/IMG_1208-modified.png"
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
-  console.log("Current theme:", theme)
   return (
     <nav
       className="
