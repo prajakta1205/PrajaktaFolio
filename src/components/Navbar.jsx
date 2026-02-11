@@ -6,19 +6,14 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
   return (
     <nav
-    className="
-      fixed top-0 left-0 w-full z-[100]
-      backdrop-blur-md transition-colors duration-300
-  
-      /* Light Mode */
-      bg-white/80
-      border-b border-slate-200
-  
-      /* Dark Mode */
-      dark:bg-slate-950/90
-      dark:border-slate-800
-    "
-  >
+      className="
+        fixed top-0 left-0 right-0 z-[100]
+        backdrop-blur-md transition-colors duration-300
+        bg-white/80 border-b border-slate-200
+        dark:bg-slate-950/90 dark:border-slate-800
+        text-slate-900 dark:text-slate-100
+      "
+    >
 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
 
@@ -39,9 +34,9 @@ export default function Navbar() {
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#experience" className="nav-link">Experience</a>
 
-          <button onClick={toggleTheme}>
-  {theme === "dark" ? "🌙 Dark" : "☀️ Light"}
-</button>
+          <button onClick={toggleTheme} className="cursor-pointer">
+            {theme === "dark" ? "🌙 Dark" : "☀️ Light"}
+          </button>
 
         </div>
       </div>
