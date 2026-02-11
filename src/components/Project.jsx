@@ -19,30 +19,61 @@ export default function Projects() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <ProjectCard
-            title="Cloud-Native Backend Platform"
+            title="Real Time Sales Intelligence"
             tech=".NET · Azure · Microservices · RavenDB"
             description="Scalable backend platform designed for high-performance APIs and distributed workloads."
             points={[
-              "Designed clean architecture microservices",
-              "Implemented secure REST APIs using ASP.NET Core",
+              "Implemented secure REST APIs using .Net8",
+              "Whisper for audio transcription",
               "Optimized database performance using RavenDB indexes",
+              "Azure Speech-to-Text (STT) for enhanced transcription workflows"
             ]}
             link="https://github.com/prajakta1205"
           />
 
           <ProjectCard
             title="AI-Powered Notification System"
-            tech="Azure Functions · OpenAI · Firebase"
+            tech="Azure Functions · .Net · Firebase"
             description="Event-driven system delivering real-time notifications with AI-enhanced processing."
             points={[
+              "Designed clean architecture microservices",
               "Integrated OpenAI APIs for intelligent workflows",
               "Used Azure Functions for background processing",
-              "Implemented Firebase Cloud Messaging",
+              "Firebase Cloud Messaging (FCM) for real-time push notifications.",
+
             ]}
             link="https://github.com/prajakta1205"
           />
-        </div>
 
+        <ProjectCard
+            title="Digital Signature Micro-Front End"
+            tech="React · .Net · REST API"
+            description="API Integration connecting to React front-end and Create Pdf"
+            points={[
+              "Developed micro services along with that created BFF layer",
+              "Fetching Rest Api from front-end to display data in application",
+              "Used Entity Framework for communication to database",
+              "extensive use of LINQ.",
+
+            ]}
+            link="https://github.com/prajakta1205"
+          />
+
+
+        <ProjectCard
+            title="Corporate Auditing Application "
+            tech="React · .Net · REST API · Azure"
+            description="Investigating and troubleshooting complex defects"
+            points={[
+              "Worked on performance optimization",
+              "using Azure function to call, MessageQueue, Service Bus",
+              "nvestigating defects of application used tools like Azure Monitor, Application Insights",
+              "Instant Communication to display Notification, any real time changes",
+
+            ]}
+            link="https://github.com/prajakta1205"
+          />
+ </div>
       </div>
     </motion.section>
   )
