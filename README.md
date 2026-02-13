@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built using React and TailwindCSS.
 
-Live Demo: [https://yourdomain.com](https://prajaktaw.me/)
+Live Demo: [https://prajaktaw.me/](https://prajaktaw.me/)
 
 ---
 
@@ -39,5 +39,4 @@ It highlights:
 - Optimized performance
 
 --
-![Portfolio Screenshot](<img width="1469" height="832" alt="Screenshot 2026-02-14 at 1 42 35 AM" src="https://github.com/user-attachments/assets/caa75814-e16e-4723-b5b3-91c6a1c7fdbb" />
-)
+
