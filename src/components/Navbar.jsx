@@ -35,7 +35,7 @@ export default function Navbar() {
           <a href="#skills" className="nav-link">Skills</a>
           <a href="#projects" className="nav-link">Projects</a>
           <a href="#experience" className="nav-link">Experience</a>
-
+          <a href="#contact" className="nav-link">Contact</a>
           <button onClick={toggleTheme} className="cursor-pointer">
             {theme === "dark" ? "🌙 Dark" : "☀️ Light"}
           </button>

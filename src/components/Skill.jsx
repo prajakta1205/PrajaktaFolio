@@ -17,11 +17,12 @@ export default function Skills() {
           Core Expertise
         </h1>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-4">
+        <div className="mt-12 grid gap-6 md:grid-cols-5">
           <SkillCard title="Backend" skills={[".NET 8/9", "ASP.NET Core", "REST APIs", "Microservices", "EF", "LINQ"]} />
-          <SkillCard title="Cloud" skills={["Azure", "Azure Functions", "Cosmos DB", "RavenDB", "Kubernetes"]} />
-          <SkillCard title="Frontend" skills={["React", "JavaScript", "Micro-frontends", "BFF Architecture"]} />
+          <SkillCard title="Cloud" skills={["Azure", "Azure Functions", "Service Bus", "RavenDB", "Docker"]} />
+          <SkillCard title="Frontend" skills={["React", "JavaScript", "Micro-frontends", "Kendo-UI"]} />
           <SkillCard title="DevOps" skills={["GitHub Actions", "Azure DevOps", "CI/CD", "Testing"]} />
+          <SkillCard title="AI" skills={["Whisper Client", "Chat Client", "Llama/LLM", "Azure STT"]} />
         </div>
 
       </div>
