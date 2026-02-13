@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar"
  import Skills from "./components/Skill"
  import Projects from "./components/Project"
  import Experience from "./components/Experience"
+ import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Contact/>
+      <Footer />
       </div>
     </main>
   )

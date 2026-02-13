@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import profile from "../assets/IMG_1208-modified.png"
 import SocialLinks from "./SocialLinks"
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   return (
@@ -63,8 +64,18 @@ export default function Hero() {
         </span>
       </div>
 
-      <h2 className="mt-4 text-2xl md:text-3xl text-slate-700 dark:text-slate-300">
-        Full Stack Developer
+      <h2 className="mt-4 text-2xl md:text-3xl text-blue-700 dark:text-blue-300">
+      <TypeAnimation
+          sequence={[
+            'Full Stack Developer', 1600,
+            '.NET & React Specialist', 1600,
+            'Cloud-Native Engineer', 1600,
+            'Microservices Architect', 1600,
+            'AI Enthusiast', 1600,
+          ]}
+          speed={50}
+          repeat={Infinity}
+        />
       </h2>
       
       <h3 className="mt-4 text-sm-3xl tracking-widest text-slate-700 dark:text-slate-300">
