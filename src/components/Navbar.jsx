@@ -18,15 +18,15 @@ export default function Navbar() {
 
 
       <div className="flex items-center gap-3">
-      <a href="#hero" className="nav-link">
+      <a href="#hero" className="nav-link flex items-center gap-2">
           <img
             src={img}
-            alt="Prajakta"
+            alt="Prajakta Wankhede"
             className="h-8 w-8 rounded-full object-cover hover:scale-105 transition-transform"
           />
-          {/* <span className="font-semibold text-base">
-            Prajakta
-          </span> */}
+          <span className="font-semibold text-base text-slate-900 dark:text-white">
+            Prajakta Wankhede
+          </span>
           </a>
         </div>
 
