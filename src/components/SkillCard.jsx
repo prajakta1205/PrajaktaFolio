@@ -1,10 +1,10 @@
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
 
 export default function SkillCard({ title, skills }) {
   return (
     <motion.div
       whileHover={{ y: -6 }}
-      transition={{ type: "spring", stiffness: 300 }}
+      transition={{ type: 'spring', stiffness: 300 }}
       className="
         rounded-xl border
         p-6 transition

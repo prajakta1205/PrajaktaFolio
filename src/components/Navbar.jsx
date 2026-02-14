@@ -1,6 +1,5 @@
-import { useTheme } from "../context/ThemeContext"
-import img from "../assets/IMG_1208-modified.png"
-
+import { useTheme } from '../context/ThemeContext'
+import img from '../assets/IMG_1208-modified.png'
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme()
@@ -14,32 +13,36 @@ export default function Navbar() {
         text-slate-900 dark:text-slate-100
       "
     >
-<div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
-
-      <div className="flex items-center gap-3">
-      <a href="#hero" className="nav-link flex items-center gap-2">
-          <img
-            src={img}
-            alt="Prajakta Wankhede"
-            className="h-8 w-8 rounded-full object-cover hover:scale-105 transition-transform"
-          />
-          <span className="font-semibold text-base text-slate-900 dark:text-white">
-            Prajakta Wankhede
-          </span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="flex items-center gap-3">
+          <a href="#hero" className="nav-link flex items-center gap-2">
+            <img
+              src={img}
+              alt="Prajakta Wankhede"
+              className="h-8 w-8 rounded-full object-cover hover:scale-105 transition-transform"
+            />
+            <span className="font-semibold text-base text-slate-900 dark:text-white">
+              Prajakta Wankhede
+            </span>
           </a>
         </div>
 
-
         <div className="flex items-center gap-6 text-sm">
-          <a href="#skills" className="nav-link">Skills</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#experience" className="nav-link">Experience</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a href="#skills" className="nav-link">
+            Skills
+          </a>
+          <a href="#projects" className="nav-link">
+            Projects
+          </a>
+          <a href="#experience" className="nav-link">
+            Experience
+          </a>
+          <a href="#contact" className="nav-link">
+            Contact
+          </a>
           <button onClick={toggleTheme} className="cursor-pointer">
-            {theme === "dark" ? "🌙 Dark" : "☀️ Light"}
+            {theme === 'dark' ? '🌙 Dark' : '☀️ Light'}
           </button>
-
         </div>
       </div>
     </nav>
