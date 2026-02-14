@@ -10,7 +10,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="relative flex min-h-[85vh] items-center pt-0 scroll-mt-28"
+      className="relative flex min-h-[85vh] items-center pt-0"
     >
       <div className="mx-auto max-w-6xl px-6 md:px-8 flex items-center min-h-[85vh]">
         {/* LEFT CONTENT */}

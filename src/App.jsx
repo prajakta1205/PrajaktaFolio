@@ -17,7 +17,7 @@ export default function App() {
       "
     >
       <Navbar />
-      <div className="pt-20">
+      <div className="pt-20 pb-24">
         <Hero />
         <Skills />
         <Projects />

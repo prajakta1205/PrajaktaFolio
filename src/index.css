@@ -5,11 +5,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem; /* clear fixed navbar on mobile and desktop */
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
 }
 
 section {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 6rem; /* match scroll-padding so sections sit just below nav */
 }

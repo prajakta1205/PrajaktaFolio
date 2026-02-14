@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="h-screen flex items-center px-6 md:px-16 scroll-mt-24"
+      className="min-h-screen flex items-center justify-center px-6 md:px-16 py-16 scroll-mt-[20vh] md:scroll-mt-24"
     >
       <div className="max-w-3xl mx-auto text-center">
         <div className="h-[2px] w-20 bg-gradient-to-r from-blue-400 to-blue-500 mx-auto mb-6"></div>

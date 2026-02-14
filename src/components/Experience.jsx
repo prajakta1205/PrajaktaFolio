@@ -65,9 +65,9 @@ export default function Experience() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen py-24 scroll-mt-28"
+      className="min-h-screen flex items-center py-16 md:py-24 scroll-mt-[20vh] md:scroll-mt-24"
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6 w-full">
         {/* ===== HEADER ===== */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-slate-900 dark:text-white">
