@@ -6,6 +6,7 @@ export default function SkillCard({ title, skills }) {
       whileHover={{ y: -6 }}
       transition={{ type: 'spring', stiffness: 300 }}
       className="
+        w-full md:w-auto
         rounded-xl border
         p-6 transition
 

@@ -65,7 +65,7 @@ export default function Experience() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen flex items-center"
+      className="min-h-screen flex items-center mt-12 md:mt-0"
     >
       <div className="max-w-6xl mx-auto px-6 w-full">
         {/* ===== HEADER ===== */}
