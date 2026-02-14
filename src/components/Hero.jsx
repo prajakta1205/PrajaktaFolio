@@ -12,9 +12,25 @@ export default function Hero() {
       transition={{ duration: 0.6 }}
       className="relative flex min-h-[85vh] items-center pt-0"
     >
-      <div className="mx-auto max-w-6xl px-6 md:px-8 flex items-center min-h-[85vh]">
-        {/* LEFT CONTENT */}
-        <div className=" max-w-3xl">
+      <div className="mx-auto max-w-6xl px-6 md:px-8 flex flex-col md:flex-row items-center min-h-[85vh] gap-8 md:gap-0">
+        {/* IMAGE: above on mobile, right on desktop */}
+        <motion.img
+          src={profile}
+          alt="Prajakta Wankhede"
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="
+        flex-shrink-0 mt-6 md:mt-0
+        w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 2xl:w-[420px] 2xl:h-[420px]
+        md:order-2 md:ml-auto
+        rounded-full object-cover
+        border border-slate-300 dark:border-slate-700
+        shadow-xl
+      "
+        />
+        {/* CONTENT: below image on mobile, left on desktop */}
+        <div className="max-w-3xl w-full md:order-1">
           <h3 className="mb-4 text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">
             Hello, I'm
           </h3>
@@ -99,23 +115,6 @@ export default function Hero() {
             <SocialLinks />
           </div>
         </div>
-
-        {/* RIGHT IMAGE */}
-        <motion.img
-          src={profile}
-          alt="Prajakta Wankhede"
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="
-        hidden md:block
-        h-[480px] w-[480px]
-        rounded-full object-cover
-        border border-slate-300 dark:border-slate-700
-        shadow-xl
-        ml-auto
-      "
-        />
       </div>
     </motion.section>
   )
