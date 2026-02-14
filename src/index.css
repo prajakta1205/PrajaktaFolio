@@ -10,7 +10,3 @@ html {
     background-color 0.3s ease,
     color 0.3s ease;
 }
-
-section {
-  scroll-margin-top: 6rem; /* match scroll-padding so sections sit just below nav */
-}
