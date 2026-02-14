@@ -21,7 +21,11 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#hero" className="nav-link flex items-center gap-2" onClick={closeMenu}>
+          <a
+            href="#hero"
+            className="nav-link flex items-center gap-2"
+            onClick={closeMenu}
+          >
             <img
               src={img}
               alt="Prajakta Wankhede"
@@ -74,21 +78,41 @@ export default function Navbar() {
               )}
             </button>
             <button
-            type="button"
-            aria-label="Toggle menu"
-            aria-expanded={menuOpen}
-            className="md:hidden p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
-            onClick={() => setMenuOpen((o) => !o)}
-          >
-            {menuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
+              type="button"
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+              className="md:hidden p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+              onClick={() => setMenuOpen((o) => !o)}
+            >
+              {menuOpen ? (
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
             </button>
           </div>
         </div>
@@ -100,16 +124,32 @@ export default function Navbar() {
           }`}
         >
           <div className="flex flex-col gap-1 py-2 border-t border-slate-200 dark:border-slate-800">
-            <a href="#skills" className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" onClick={closeMenu}>
+            <a
+              href="#skills"
+              className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              onClick={closeMenu}
+            >
               Skills
             </a>
-            <a href="#projects" className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" onClick={closeMenu}>
+            <a
+              href="#projects"
+              className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              onClick={closeMenu}
+            >
               Projects
             </a>
-            <a href="#experience" className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" onClick={closeMenu}>
+            <a
+              href="#experience"
+              className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              onClick={closeMenu}
+            >
               Experience
             </a>
-            <a href="#contact" className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" onClick={closeMenu}>
+            <a
+              href="#contact"
+              className="nav-link py-3 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
+              onClick={closeMenu}
+            >
               Contact
             </a>
           </div>
